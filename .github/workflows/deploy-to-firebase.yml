@@ -15,6 +15,9 @@ jobs:
         run: npm install
       - name: Build
         run: npm run build
+        env:
+          GOOGLE_KEY_API: ${{ secrets.GOOGLE_KEY_API }}
+          PAYPAL_CLIENT_ID: ${{ secrets.PAYPAL_CLIENT_ID }}
       - name: Archive Production Artifact
         uses: actions/upload-artifact@main
         with:
@@ -33,7 +36,7 @@ jobs:
           name: dist
           path: dist
       - name: Deploy to Firebase
-        uses: w9jds/firebase-action@main
+        uses: w9jds/firebase-action@master
         with:
           args: deploy --only hosting
         env:
