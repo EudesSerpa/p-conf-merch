@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import { Map } from '../../components/Map';
 import { AppContext } from '../../context/AppContext';
 import { useGoogleAddress } from '../../hooks/useGoogleAddress';
-import { Seo } from '../../components/Seo';
+import { Seo } from '../../components/SEOHelmet';
 import './styles.css';
 
 export const Success = () => {

@@ -1,4 +1,3 @@
-// import { useLoaderData } from 'react-router-dom';
 import './styles.css';
 
 export const Product = ({
@@ -9,8 +8,6 @@ export const Product = ({
   image,
   handleAddToCart,
 }) => {
-  // const { body: product } = useLoaderData();
-
   return (
     <li key={id} className="Products__item">
       <figure>
@@ -21,7 +18,7 @@ export const Product = ({
             {title} <span>{price}</span>
           </h2>
 
-          <p>{description}</p>
+          <p className="Products__item-description">{description}</p>
 
           <button
             type="button"

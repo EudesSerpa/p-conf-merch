@@ -1,8 +1,8 @@
 .Products__items {
-  grid-template-columns: repeat(3, 1fr);
-  grid-gap: 1.5rem;
-  grid-row-gap: 1.5em;
   display: grid;
-
+  grid-template-columns: repeat(auto-fill, minmax(260px, 1fr));
+  grid-auto-flow: row dense;
+  gap: 1.5em;
+  margin-block: 2rem;
   list-style: none;
 }

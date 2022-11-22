@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { AppContext } from '../../context/AppContext';
 import { handleSumTotal } from '../../utils/handleSumTotal';
-import { Seo } from '../../components/Seo';
+import { Seo } from '../../components/SEOHelmet';
 import './styles.css';
 
 export const Payment = () => {

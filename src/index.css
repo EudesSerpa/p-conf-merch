@@ -9,7 +9,7 @@
 
 body {
   display: grid;
-  grid-template-columns: minmax(auto, 768px);
+  grid-template-columns: minmax(auto, 940px);
   grid-template-rows: auto 1fr auto;
   justify-content: center;
   min-height: 100vh;

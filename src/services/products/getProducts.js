@@ -1,5 +1,7 @@
+import { BASE_URL } from '../settings';
+
 export const loaderProducts = async ({ request }) => {
-  const response = await fetch('https://jsonplaceholder.typicode.com/posts', {
+  const response = await fetch(`${BASE_URL}/products`, {
     signal: request.signal,
   });
 
@@ -10,7 +12,7 @@ export const loaderProducts = async ({ request }) => {
     };
   }
 
-  const body = await response.json();
+  const data = await response.json();
 
-  return { body };
+  return { products: data };
 };

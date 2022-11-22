@@ -1,9 +1,10 @@
 .Products__item {
-  text-decoration: none;
-  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
-  border-radius: 5px;
-  margin: 0 0 20px 0;
+  height: fit-content;
   position: relative;
+  margin: 0 0 20px 0;
+  border-radius: 5px;
+  box-shadow: 8px 14px 38px rgba(39, 44, 49, 0.06), 1px 3px 8px rgba(39, 44, 49, 0.03);
+  text-decoration: none;
 }
 
 .Products__item-info {
@@ -31,6 +32,16 @@
   height: 200px;
   border-radius: 5px 5px 0 0;
   object-fit: contain;
+}
+
+.Products__item-description {
+  display: -webkit-box;
+  -webkit-line-clamp: 3;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-orientation: vertical;
+  text-overflow: ellipsis;
+  margin-block: .8rem 1rem;
 }
 
 .Products__item button {

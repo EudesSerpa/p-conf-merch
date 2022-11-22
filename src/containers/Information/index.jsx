@@ -1,7 +1,7 @@
 import { useContext, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
-import { Seo } from '../../components/Seo';
+import { Seo } from '../../components/SEOHelmet';
 import './styles.css';
 
 export const Information = () => {
