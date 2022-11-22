@@ -4,6 +4,7 @@ const HtmlWebpackPlugin = require('html-webpack-plugin');
 const MiniCssExtractPlugin = require('mini-css-extract-plugin');
 const CssMinimizerPlugin = require('css-minimizer-webpack-plugin');
 const TerserPlugin = require('terser-webpack-plugin');
+const CopyPlugin = require('copy-webpack-plugin');
 require('dotenv').config();
 
 module.exports = {
@@ -71,6 +72,9 @@ module.exports = {
         PAYPAL_CLIENT_ID: JSON.stringify(process.env.PAYPAL_CLIENT_ID),
         GOOGLE_KEY_API: JSON.stringify(process.env.GOOGLE_KEY_API),
       },
+    }),
+    new CopyPlugin({
+      patterns: [{ from: 'public/icon.png', to: 'assets' }],
     }),
   ],
   optimization: {
