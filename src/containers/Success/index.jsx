@@ -2,6 +2,7 @@ import { useContext, useEffect } from 'react';
 import { Map } from '../../components/Map';
 import { AppContext } from '../../context/AppContext';
 import { useGoogleAddress } from '../../hooks/useGoogleAddress';
+import HEAD from '../../components/SEO';
 import './styles.css';
 
 export const Success = () => {
@@ -21,16 +22,20 @@ export const Success = () => {
   }, []);
 
   return (
-    <section className="Success-content">
-      <header>
-        <h2>Hi, {buyer[0]?.name || 'there'}! Thanks for your bought</h2>
+    <>
+      <HEAD pageTitle="Successful purchase" description="Your products!" />
 
-        <span>Your order arrive in 4 days</span>
-      </header>
+      <section className="Success-content">
+        <header>
+          <h2>Hi, {buyer[0]?.name || 'there'}! Thanks for your purchase</h2>
 
-      <footer className="Success-map">
-        <Map location={location} />
-      </footer>
-    </section>
+          <span>Your order will arrive in 4 days</span>
+        </header>
+
+        <footer className="Success-map">
+          <Map location={location} />
+        </footer>
+      </section>
+    </>
   );
 };

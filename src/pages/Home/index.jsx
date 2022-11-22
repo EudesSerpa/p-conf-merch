@@ -1,9 +1,13 @@
-import { Link, useLoaderData } from 'react-router-dom';
 import initialState from '../../initialState';
 import { Products } from '../../containers/Products';
+import HEAD from '../../components/SEO';
 
 export const Home = () => {
-  const { body: products } = useLoaderData();
+  return (
+    <>
+      <HEAD pageTitle="Products" description="Products of all categories!" />
 
-  return <Products products={initialState.products} />;
+      <Products products={initialState.products} />
+    </>
+  );
 };

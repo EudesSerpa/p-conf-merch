@@ -1,9 +1,10 @@
 import { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { AppContext } from '../../context/AppContext';
 import { handleSumTotal } from '../../utils/handleSumTotal';
+import HEAD from '../../components/SEO';
 import './styles.css';
-import { useNavigate } from 'react-router-dom';
 
 export const Payment = () => {
   const {
@@ -27,6 +28,8 @@ export const Payment = () => {
 
   return (
     <>
+      <HEAD pageTitle="Payment" description="Summary of the order" />
+
       <section className="Payment-content">
         <header>
           <h3>Summary of the order</h3>
