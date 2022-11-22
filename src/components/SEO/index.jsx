@@ -1,6 +1,6 @@
 import { Helmet } from 'react-helmet';
 
-const Seo = ({ pageTitle, description }) => {
+export const Seo = ({ pageTitle, description }) => {
   return (
     <Helmet>
       <title>{`Platzi Conf Merch | ${pageTitle}`}</title>
@@ -19,5 +19,3 @@ const Seo = ({ pageTitle, description }) => {
     </Helmet>
   );
 };
-
-export default Seo;

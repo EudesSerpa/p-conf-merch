@@ -3,7 +3,7 @@ import { MdDelete } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
 import { handleSumTotal } from '../../utils/handleSumTotal';
-import Seo from '../../components/Seo';
+import { Seo } from '../../components/Seo';
 import './styles.css';
 
 export const Checkout = () => {

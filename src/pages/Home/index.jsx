@@ -1,6 +1,6 @@
 import initialState from '../../initialState';
 import { Products } from '../../containers/Products';
-import Seo from '../../components/Seo';
+import { Seo } from '../../components/Seo';
 
 export const Home = () => {
   return (

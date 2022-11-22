@@ -1,5 +1,5 @@
 import { Link, useRouteError } from 'react-router-dom';
-import Seo from '../../components/Seo';
+import { Seo } from '../../components/Seo';
 
 export const NotFound = () => {
   const error = useRouteError();
