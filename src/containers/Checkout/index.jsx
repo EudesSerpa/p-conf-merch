@@ -3,7 +3,7 @@ import { MdDelete } from 'react-icons/md';
 import { Link } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
 import { handleSumTotal } from '../../utils/handleSumTotal';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 import './styles.css';
 
 export const Checkout = () => {
@@ -14,7 +14,7 @@ export const Checkout = () => {
 
   return (
     <>
-      <HEAD pageTitle="Orders list" description="Your products!" />
+      <Seo pageTitle="Orders list" description="Your products!" />
 
       <section className="Checkout">
         <div className="Checkout-content">

@@ -1,11 +1,11 @@
 import initialState from '../../initialState';
 import { Products } from '../../containers/Products';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 
 export const Home = () => {
   return (
     <>
-      <HEAD pageTitle="Products" description="Products of all categories!" />
+      <Seo pageTitle="Products" description="Products of all categories!" />
 
       <Products products={initialState.products} />
     </>

@@ -1,12 +1,12 @@
 import { Link, useRouteError } from 'react-router-dom';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 
 export const NotFound = () => {
   const error = useRouteError();
 
   return (
     <>
-      <HEAD pageTitle="Not found page" description="" />
+      <Seo pageTitle="Not found page" description="" />
 
       <section>
         <header>

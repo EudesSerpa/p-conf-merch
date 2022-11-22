@@ -2,7 +2,7 @@ import { useContext, useEffect } from 'react';
 import { Map } from '../../components/Map';
 import { AppContext } from '../../context/AppContext';
 import { useGoogleAddress } from '../../hooks/useGoogleAddress';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 import './styles.css';
 
 export const Success = () => {
@@ -23,7 +23,7 @@ export const Success = () => {
 
   return (
     <>
-      <HEAD pageTitle="Successful purchase" description="Your products!" />
+      <Seo pageTitle="Successful purchase" description="Your products!" />
 
       <section className="Success-content">
         <header>

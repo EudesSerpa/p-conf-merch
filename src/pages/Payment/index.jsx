@@ -3,7 +3,7 @@ import { useNavigate } from 'react-router-dom';
 import { PayPalButtons } from '@paypal/react-paypal-js';
 import { AppContext } from '../../context/AppContext';
 import { handleSumTotal } from '../../utils/handleSumTotal';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 import './styles.css';
 
 export const Payment = () => {
@@ -28,7 +28,7 @@ export const Payment = () => {
 
   return (
     <>
-      <HEAD pageTitle="Payment" description="Summary of the order" />
+      <Seo pageTitle="Payment" description="Summary of the order" />
 
       <section className="Payment-content">
         <header>

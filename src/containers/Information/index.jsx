@@ -1,7 +1,7 @@
 import { useContext, useRef } from 'react';
 import { useNavigate } from 'react-router-dom';
 import { AppContext } from '../../context/AppContext';
-import HEAD from '../../components/SEO';
+import Seo from '../../components/Seo';
 import './styles.css';
 
 export const Information = () => {
@@ -24,7 +24,7 @@ export const Information = () => {
 
   return (
     <>
-      <HEAD pageTitle="Contact information" description="" />
+      <Seo pageTitle="Contact information" description="" />
 
       <section className="Information">
         <div className="Information-content">
